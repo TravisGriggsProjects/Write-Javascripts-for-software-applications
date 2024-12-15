@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--Travis Griggs 13/05/2024 assignment Form Validation-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="../javascript/JSB_AssignmentPart2_TravisGriggs.js"></script>
+<title>Payment Form</title>
+<h1> ITWorks Website</h1>
+</head>
+<body style="background-color:Snow;"> 
+
+	<form onsubmit="return validateForm()">  
+ 
+        <fieldset>
+            <legend>Customer Details</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"><br><br>
+			
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"><br><br>
+			
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode"><br><br>
+			
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>			
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Details</legend>
+            <label for="creditCard">Credit Card:</label> 
+            <select id="creditCard" name="creditCard">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="amex">American Express</option>
+            </select><br><br>
+			
+			<label for="cardNumber">Credit Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber"><br><br>
+			
+            <label for="ccv">CCV:</label>
+            <input type="text" id="ccv" name="ccv"><br><br>
+			
+            <label for="expiry">Expiry Month/Year:</label>
+            <select id="expiryMonth" name="expiryMonth">
+                <option value="01">January</option>
+				<option value="02">February</option>
+				<option value="03">March</option>
+				<option value="04">April</option>
+				<option value="05">May</option>
+				<option value="06">June</option>
+				<option value="07">July</option>
+				<option value="08">August</option>
+				<option value="09">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+            </select>            
+            <select id="expiryYear" name="expiryYear">
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+				<option value="2026">2026</option>
+                <option value="2027">2027</option>
+				<option value="2028">2028</option>
+                <option value="2029">2029</option>
+				<option value="2030">2030</option>               
+            </select><br><br>         
+        </fieldset>
+
+        <button type="submit">Submit</button>       
+        <button type="button" onclick="alert('Help button clicked')">Help</button><br><br>
+		
+		<button type="button" onclick="openURL()">Go to other website</button>		
+	</form>
+	
+</body>
+</html>
